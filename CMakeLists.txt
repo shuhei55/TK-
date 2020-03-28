@@ -1,10 +1,14 @@
 # minimum required CMAKE version
 CMAKE_MINIMUM_REQUIRED(VERSION 3.7 FATAL_ERROR)
 
+project(tpp)
+
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 # compiler must be 11 or 14
 set(CMAKE_CXX_STANDARD 11)
+
+set(CMAKE_BUILD_TYPE Release)
 
 # required if linking to static library
 add_definitions(-DANTLR4CPP_STATIC)
